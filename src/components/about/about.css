@@ -1,12 +1,39 @@
-.about{
+/* .about{
     display: grid;
     grid-template-columns: 1fr 1fr;
-    justify-content: center;
+    padding: 70px 170px;
 
 }
 
-.picture img{
+.picture> img{
     width: 350px;
     height: 350px;
     border-radius: 100%;
 }
+.picture{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+ /* Small devices (landscape phones, 576px and up) */
+/* @media (min-width: 480px) and (max-width: 767.98px) {
+    .about{
+        display: grid;
+        grid-template-columns: 1fr;
+        padding: 30px;
+        height: 100vh;
+    
+    }
+} */
+
+/*Medium devices (tablets, 768px and up)*/
+/* @media (min-width: 768px) and (max-width: 991.98px) {
+    .about{
+        display: grid;
+        grid-template-columns: 1fr;
+        padding: 30px;
+        height: 100vh;
+    
+    }
+} */

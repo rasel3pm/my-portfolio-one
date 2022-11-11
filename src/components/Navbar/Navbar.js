@@ -4,7 +4,7 @@ import { FaBars, FaTimes } from "react-icons/fa";
 const Navbar = () => {
   const [nav, setNav] = useState(false);
   return (
-    <div className=" flex fixed justify-between items-center text-white w-full px-20 h-20  bg-slate-900 ">
+    <div className=" flex px-12 fixed justify-between items-center text-white w-full h-20  bg-slate-900 ">
       <div>
         <h1 className="text-4xl font-signature text-orange-500 font-bold">
           Rasel

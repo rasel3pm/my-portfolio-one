@@ -18,8 +18,8 @@ code {
 @tailwind components;
 @tailwind utilities;
 
-/* @layer base{
+@layer base{
   html{
     font-family: 'Raleway', sans-serif;
   }
-} */
+}

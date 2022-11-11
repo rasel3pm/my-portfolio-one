@@ -3,6 +3,7 @@ import dashboard from "../../asset/picture/1.PNG";
 import blogSite from "../../asset/picture/2.PNG";
 import foodApp from "../../asset/picture/3.PNG";
 import search from "../../asset/picture/searc.PNG";
+import { NavLink } from "react-router-dom";
 
 const Portfolio = () => {
   const Portfolio = [
@@ -61,13 +62,9 @@ const Portfolio = () => {
                 >
                   Demo
                 </a>
-                <a
-                  target="_blank"
-                  href={liveLink}
-                  className="w-1/2 px-6 m-4 duration-200 hover:scale-105"
-                >
+                <button className="w-1/2 px-6 m-4 duration-200 hover:scale-105">
                   Code
-                </a>
+                </button>
               </div>
             </div>
           ))}

@@ -3,3 +3,10 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+.backIma{
+  background-image: url(./asset/picture/bg.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}

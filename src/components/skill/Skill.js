@@ -73,13 +73,13 @@ const Skill = () => {
   ];
 
   return (
-    <div className="w-full px-20 bg-gradient-to-r from-gray-900 to-gray-500">
-      <div className="grid justify-center items-center sm:grid sm:grid-cols-4 md:grid-cols-10  px-auto sm:px-0">
+    <div>
+      <div className="flex  gap-6 flex-wrap p-6">
         {icons.map(({ style, id, icon, title }) => (
-          <div className={"p-5 bg-slate-400s" + " " + style} key={id}>
+          <div className={"" + " " + style} key={id}>
             <div>
               <ul>
-                <li className={" text-3xl " + " " + style}>{icon}</li>
+                <li className={"text-3xl" + " " + style}>{icon}</li>
               </ul>
             </div>
             <div>
