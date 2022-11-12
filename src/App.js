@@ -5,24 +5,21 @@ import Contact from "./components/contact/Contact";
 import Navbar from "./components/Navbar/Navbar";
 import Portfolio from "./components/portfolio/Portfolio";
 import Home from "./page/home/Home";
-import Service from "./page/Services/Service";
 import VideoPlayer from "./page/video-player/VideoPlayer";
 
 function App() {
   return (
     <>
       <BrowserRouter>
+        <Navbar />
         <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/portfolio" element={<Portfolio />} />
+          <Route path="/contact" element={<Contact />} />
           <Route path="/player" element={<VideoPlayer />} />
         </Routes>
       </BrowserRouter>
-
-      <Navbar />
-      <Home />
-      <About />
-      <Portfolio />
-      <Service />
-      <Contact />
     </>
   );
 }
