@@ -6,6 +6,7 @@ import "./clientReview.css";
 import "swiper/css";
 import "swiper/css/effect-coverflow";
 import "swiper/css/pagination";
+import "swiper/css/lazy";
 import { Autoplay, Navigation, EffectCoverflow, Pagination } from "swiper";
 
 import Slider from "./Slider_1";
@@ -15,6 +16,7 @@ const ProjectOverview = () => {
   return (
     <div className="bg-slate-700 md:h-screen flex justify-center items-center">
       <Swiper
+        lazy={true}
         spaceBetween={35}
         effect={"coverflow"}
         grabCursor={true}
@@ -25,20 +27,17 @@ const ProjectOverview = () => {
         }}
         autoplay={{
           delay: 4000,
-          // disableOnInteraction: false,
+          disableOnInteraction: false,
         }}
         coverflowEffect={{
           rotate: 70,
-          stretch: 0,
+          stretch: 50,
           depth: 100,
-          modifier: 2,
+          modifier: 3,
           slideShadows: true,
         }}
         modules={[Autoplay, EffectCoverflow, Pagination, Navigation]}
         className="mySwiper"
-        // centeredSlides={true}
-
-        // navigation={true}
       >
         <SwiperSlide>
           <Slider></Slider>
@@ -48,6 +47,12 @@ const ProjectOverview = () => {
         </SwiperSlide>
         <SwiperSlide>
           <Slider></Slider>
+        </SwiperSlide>
+        <SwiperSlide>
+          <Slider></Slider>
+        </SwiperSlide>
+        <SwiperSlide>
+          <Slider2></Slider2>
         </SwiperSlide>
         <SwiperSlide>
           <Slider></Slider>

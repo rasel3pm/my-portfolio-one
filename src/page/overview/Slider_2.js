@@ -4,6 +4,7 @@ const Slider_2 = () => {
   return (
     <div>
       <img src={image}></img>
+      <h1>Portfolio</h1>
     </div>
   );
 };

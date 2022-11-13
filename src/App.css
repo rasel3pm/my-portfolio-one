@@ -12,5 +12,6 @@
 }
 
 .active{
-  color: aqua;
+  color: darkcyan;
+  border-bottom: 1px solid darkcyan;
 }

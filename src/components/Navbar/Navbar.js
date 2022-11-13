@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { FaBars, FaTimes } from "react-icons/fa";
 import { CiLinkedin } from "react-icons/ci";
 import { AiOutlineGithub } from "react-icons/ai";
@@ -6,8 +6,9 @@ import { NavLink } from "react-router-dom";
 
 const Navbar = () => {
   const [nav, setNav] = useState(false);
+
   return (
-    <div className=" flex px-12 justify-between items-center text-white w-full h-20  bg-slate-900 ">
+    <div className="flex px-12 justify-between items-center text-white w-full h-20  bg-slate-900">
       <div>
         <h1 className="text-4xl font-signature text-orange-500 font-bold">
           Rasel
