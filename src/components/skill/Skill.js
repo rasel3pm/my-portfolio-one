@@ -83,7 +83,7 @@ const Skill = () => {
               </ul>
             </div>
             <div>
-              <span className="text-slate-200">{title}</span>
+              <span className="text-slate-600">{title}</span>
             </div>
           </div>
         ))}
