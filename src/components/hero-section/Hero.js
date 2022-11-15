@@ -8,10 +8,13 @@ const Hero = () => {
         <SocialLink />
         <div>
           <p className="text-slate-200 text-2xl">
-            Hi there <span className="text-purple-500 text-2xl">I'am a</span>
+            Hi there{" "}
+            <span className="text-purple-500 text-2xl md:text-3xl">
+              I'am Rasel Kibria a
+            </span>
           </p>
-          <span class="bg-clip-text text-transparent bg-gradient-to-r from-green-300 to-green-700 text-8xl">
-            Full Stack Developer
+          <span class="bg-clip-text text-transparent bg-gradient-to-r from-green-300 to-green-700 md:text-7xl text-4xl">
+            Full Stack web Developer
           </span>
         </div>
 

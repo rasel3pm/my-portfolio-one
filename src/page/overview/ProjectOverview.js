@@ -14,7 +14,7 @@ import Slider2 from "./Slider_2";
 
 const ProjectOverview = () => {
   return (
-    <div className="bg-slate-700 md:h-screen flex justify-center items-center">
+    <div className="bg-slate-700 w-full md:h-screen h-96 flex justify-center items-center">
       <Swiper
         lazy={true}
         spaceBetween={35}

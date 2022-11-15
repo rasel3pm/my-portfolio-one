@@ -28,6 +28,9 @@ const Navbar = () => {
         <li className="px-4 cursor-pointer capitalize font-medium text-gray-400 hover:scale-105 hover:text-gray-300 duration-50">
           <NavLink to="/contact">Contact</NavLink>
         </li>
+        <li className="px-4 cursor-pointer capitalize font-medium text-gray-400 hover:scale-105 hover:text-gray-300 duration-50">
+          <NavLink to="/player">Demo Video</NavLink>
+        </li>
       </ul>
 
       {/* Social link */}
@@ -59,6 +62,9 @@ const Navbar = () => {
           </li>
           <li className="px-4 cursor-pointer capitalize py-5 text-4xl text-white">
             <NavLink to="/contact">Contact</NavLink>
+          </li>
+          <li className="px-4 cursor-pointer capitalize py-5 text-4xl text-white">
+            <NavLink to="/player">Contact</NavLink>
           </li>
         </ul>
       )}

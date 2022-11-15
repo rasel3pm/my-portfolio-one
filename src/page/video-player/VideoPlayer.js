@@ -6,7 +6,7 @@ const VideoPlayer = () => {
       <ReactPlayer
         muted
         controls
-        url="https://www.youtube.com/watch?v=ysz5S6PUM-U"
+        url="https://www.youtube.com/watch?v=dayGL0mYRnU"
       />
     </div>
   );
