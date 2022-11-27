@@ -54,7 +54,7 @@ const Navbar = () => {
           <li className="px-4 cursor-pointer capitalize py-5 text-4xl text-white">
             <NavLink to="/">Home</NavLink>
           </li>
-          <li className="px-4 cursor-pointer capitalize py-5 text-4xl text-white">
+          <li className="px-2 cursor-pointer capitalize py-5 text-4xl text-white">
             <NavLink to="/about">about</NavLink>
           </li>
           <li className="px-4 cursor-pointer capitalize py-5 text-4xl text-white">

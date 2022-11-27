@@ -1,6 +1,6 @@
 import React from "react";
-import image from "../../asset/picture/2.PNG";
-const Slider_2 = () => {
+import image from "../../asset/picture/searc.PNG";
+const Slider_4 = () => {
   return (
     <div>
       <img src={image}></img>
@@ -10,4 +10,4 @@ const Slider_2 = () => {
   );
 };
 
-export default Slider_2;
+export default Slider_4;

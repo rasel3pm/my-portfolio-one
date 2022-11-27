@@ -9,15 +9,18 @@ import "swiper/css/pagination";
 import "swiper/css/lazy";
 import { Autoplay, Navigation, EffectCoverflow, Pagination } from "swiper";
 
-import Slider from "./Slider_1";
+import Slider1 from "./Slider_1";
 import Slider2 from "./Slider_2";
+import Slider3 from "./Slider_3";
+import Slider4 from "./Slider_4";
 
 const ProjectOverview = () => {
   return (
     <div className="bg-slate-700 w-full md:h-screen h-96 flex justify-center items-center">
       <Swiper
         lazy={true}
-        spaceBetween={35}
+        speed={600}
+        spaceBetween={40}
         effect={"coverflow"}
         grabCursor={true}
         centeredSlides={true}
@@ -32,7 +35,7 @@ const ProjectOverview = () => {
         coverflowEffect={{
           rotate: 70,
           stretch: 50,
-          depth: 100,
+          depth: 50,
           modifier: 3,
           slideShadows: true,
         }}
@@ -40,25 +43,16 @@ const ProjectOverview = () => {
         className="mySwiper"
       >
         <SwiperSlide>
-          <Slider></Slider>
+          <Slider1></Slider1>
         </SwiperSlide>
         <SwiperSlide>
           <Slider2></Slider2>
         </SwiperSlide>
         <SwiperSlide>
-          <Slider></Slider>
+          <Slider3></Slider3>
         </SwiperSlide>
         <SwiperSlide>
-          <Slider></Slider>
-        </SwiperSlide>
-        <SwiperSlide>
-          <Slider2></Slider2>
-        </SwiperSlide>
-        <SwiperSlide>
-          <Slider></Slider>
-        </SwiperSlide>
-        <SwiperSlide>
-          <Slider2></Slider2>
+          <Slider4></Slider4>
         </SwiperSlide>
       </Swiper>
     </div>

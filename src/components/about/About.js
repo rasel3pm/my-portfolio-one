@@ -12,15 +12,15 @@ const About = () => {
           </h1>
           <div className="py-5">
             <span className=" text-xl">
-              I have 4 years of experience building and desgining web.I love to
-              work on web application using technologes like
-              React,Tailwind,express,node js,mongodb.
               <p>
-                Web developers build and maintain websites and web applications,
-                using programming, design tools, and languages such as HTML,
-                CSS, Python and JavaScript to meet both client and end-user
-                needs.
+                {" "}
+                I am Rasel Kibria,a hard working motivated learner. 2 years of
+                experience building and desgining web.I love to work on web
+                application using technologes like HTML CSS Boostrup Tailwindcss
+                JavaScript React,Tailwind,express,node js,mongodb.
               </p>
+              <br />
+              <p>I Expect want to high level web Developer.</p>
             </span>
           </div>
           <div className="py-5 text-center md:text-left">
