@@ -3,12 +3,23 @@ import { FaBars, FaTimes } from "react-icons/fa";
 import { CiLinkedin } from "react-icons/ci";
 import { AiOutlineGithub } from "react-icons/ai";
 import { NavLink } from "react-router-dom";
+import "./navbar.css";
 
 const Navbar = () => {
   const [nav, setNav] = useState(false);
+  const [scroll, setScroll] = useState(false);
+
+  function stickyNavbar() {
+    if (window.scrollY >= 300) {
+      setScroll(true);
+    } else {
+      setScroll(false);
+    }
+  }
+  window.addEventListener("scroll", stickyNavbar);
 
   return (
-    <div className="flex px-12 justify-between items-center text-white w-full h-20  bg-slate-900">
+    <menu className={scroll ? "nav-scroll" : "nav-fixed"}>
       <div>
         <h1 className="text-4xl font-signature text-orange-500 font-bold">
           Rasel
@@ -35,11 +46,13 @@ const Navbar = () => {
 
       {/* Social link */}
       <div className="flex w-36 justify-center items-center">
-        <span className="p-3 text-2xl hover:text-pink-500 cursor-pointer text-slate-200">
-          <CiLinkedin />
-        </span>
+        <a href="https://github.com/rasel3pm" target="_blank">
+          <span className="p-3 text-2xl hover:text-pink-500 cursor-pointer text-slate-200">
+            <AiOutlineGithub />
+          </span>
+        </a>
         <span className="text-2xl hover:text-pink-500 cursor-pointer text-slate-200">
-          <AiOutlineGithub />
+          <CiLinkedin />
         </span>
       </div>
 
@@ -68,7 +81,7 @@ const Navbar = () => {
           </li>
         </ul>
       )}
-    </div>
+    </menu>
   );
 };
 
