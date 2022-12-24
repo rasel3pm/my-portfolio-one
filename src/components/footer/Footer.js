@@ -1,9 +1,12 @@
 import React from "react";
+import Brand from "../../asset/picture/brand.png";
 
 const Footer = () => {
   return (
     <div className="bg-slate-600 p-4 text-slate-300 flex justify-around items-center">
-      <span className="text-l ">All Right reserved by Rasel Kibria</span>
+      <div className="w-28">
+        <img src={Brand} />
+      </div>
 
       <div>
         <ul className="flex">

@@ -4,6 +4,7 @@ import { CiLinkedin } from "react-icons/ci";
 import { AiOutlineGithub } from "react-icons/ai";
 import { NavLink } from "react-router-dom";
 import "./navbar.css";
+import Brand from "../../asset/picture/logo3.png";
 
 const Navbar = () => {
   const [nav, setNav] = useState(false);
@@ -20,10 +21,8 @@ const Navbar = () => {
 
   return (
     <menu className={scroll ? "nav-scroll" : "nav-fixed"}>
-      <div>
-        <h1 className="text-4xl font-signature text-orange-500 font-bold">
-          Rasel
-        </h1>
+      <div className="w-28">
+        <img src={Brand} alt="logo" />
       </div>
 
       <ul className=" hidden md:flex">
